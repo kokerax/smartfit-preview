@@ -1,0 +1,36 @@
+/* Hallmark · component: scroll scene · inherited scenic theme
+ * Pre-emit critique: P4 H5 E4 S5 R4 V4. Native scrolling, four distinct chapters. */
+.scroll-ready .hero-story{height:calc(max(850px,100svh) + 260svh)}
+.scroll-ready .hero-visual{visibility:hidden}
+.scroll-ready .layer-stage{left:var(--stage-left,50%);top:var(--stage-top,27%);width:var(--stage-width,400px);opacity:1}
+.scroll-ready .scene-anchor{top:43%}
+.layer-piece{opacity:var(--piece-reveal,1);filter:brightness(1) saturate(1) drop-shadow(0 18px 16px var(--scene-shadow));transition:filter .5s var(--j-ease),opacity .5s var(--j-ease)}
+.layers-focused .layer-piece:not(.is-active){opacity:calc(var(--piece-reveal,1) * .68);filter:brightness(.5) saturate(.55) drop-shadow(0 12px 12px var(--scene-shadow))}
+.layers-focused .layer-piece.is-active{filter:brightness(1.12) saturate(1.08) drop-shadow(0 20px 22px var(--scene-shadow))}
+.part-label{left:calc(100% - 10px);width:235px;opacity:1;transition:opacity .5s var(--j-ease)}
+.part-label>div{padding:15px 18px;border-radius:7px}
+.part-label small{font-size:11px;letter-spacing:.09em}
+.part-label strong{font-size:19px;line-height:1.3;margin-top:7px}
+.part-label p{font-size:13px;line-height:1.5;margin-top:7px}
+.layers-focused .part-label:not(.is-active){opacity:.76}
+.part-label.is-active>div{box-shadow:0 12px 32px var(--j-shadow);background:var(--j-black);border-color:var(--j-sand)}
+.part-label:before{width:58px}.part-dot{right:calc(100% + 55px)}
+.scroll-ready .layer-story{top:29%;width:30%;max-width:400px}
+.scroll-ready .layer-story h2{font-size:clamp(38px,4.2vw,60px)}
+.layer-story-detail{min-height:180px;margin-top:26px;padding-top:23px}
+.layer-step{font-size:12px}.layer-story-detail h3{font-size:24px;line-height:1.25;margin:16px 0 12px}
+.layer-story-detail p{font-size:16px;line-height:1.65;max-width:340px}
+.motion-paused .layer-piece,.motion-paused .part-label{transition:none}
+@media(min-width:701px) and (max-height:849px){.scroll-ready .hero-story{height:calc(max(640px,100svh) + 260svh)}.scroll-ready .layer-story{top:19%}.layer-story-detail{min-height:155px;margin-top:18px;padding-top:18px}.scroll-ready .layer-story h2{font-size:45px}.layer-story-detail h3{font-size:21px}.layer-story-detail p{font-size:14px}}
+@media(min-width:701px) and (max-width:1000px){.part-label{left:calc(100% - 12px);width:180px}.part-label>div{padding:12px}.part-label small{font-size:9px}.part-label strong{font-size:16px}.part-label p{font-size:11px}.part-label:before{width:30px}.part-dot{right:calc(100% + 27px)}.scroll-ready .layer-story{left:4%;width:29%;top:32%}.scroll-ready .layer-story h2{font-size:36px}.layer-story-detail h3{font-size:21px}.layer-story-detail p{font-size:14px}.layer-story-detail{min-height:205px}}
+@media(max-width:700px){
+ .scroll-ready .hero-story{height:calc(max(790px,100svh) + 240svh)}
+ .scroll-ready .scene-anchor{top:43%}
+ .part-label{left:calc(100% - 4px);width:145px}.part-label>div{padding:10px 11px}.part-label small{font-size:9px;letter-spacing:.03em}.part-label strong{font-size:14px;line-height:1.25;margin-top:4px}.part-label p{display:none}.part-label:before{width:25px}.part-dot{right:calc(100% + 22px)}
+ .scroll-ready .layer-story{left:20px;width:calc(100% - 40px);max-width:none;top:51%}.scroll-ready .layer-story h2{font-size:37px}.layer-story>.eyebrow{font-size:9px;margin-bottom:10px}.layer-story-detail{min-height:130px;margin-top:17px;padding-top:14px}.layer-step{font-size:10px}.layer-story-detail h3{font-size:21px;margin:9px 0 8px}.layer-story-detail p{font-size:14px;line-height:1.55;max-width:330px}.layer-story-actions{margin-top:13px}
+}
+@media(max-width:700px) and (max-height:740px){.scroll-ready .hero-story{height:340svh}.scroll-ready .layer-story{top:46%}.scroll-ready .layer-story h2{font-size:31px}.layer-story>.eyebrow{font-size:8px;margin-bottom:7px}.layer-story-detail{min-height:117px;margin-top:12px;padding-top:11px}.layer-story-detail h3{font-size:19px;margin:7px 0}.layer-story-detail p{font-size:13px;line-height:1.5}.layer-story-actions{margin-top:8px}.part-label>div{padding:8px 10px}.part-label small{font-size:8px}.part-label strong{font-size:12px}.part-label{width:135px}}
+@media(max-width:360px){.part-label{width:123px}.part-label strong{font-size:12px}.part-label small{font-size:8px}.part-label>div{padding:8px}.scroll-ready .layer-story h2{font-size:30px}}
+@media(max-width:360px) and (max-height:610px){.scroll-ready .layer-story{top:46%}.layer-story>.eyebrow{display:none}.scroll-ready .layer-story h2{font-size:28px}.layer-story-detail{min-height:115px;margin-top:10px;padding-top:9px}.layer-story-detail h3{font-size:18px;margin:7px 0}.layer-story-detail p{font-size:12px}.layer-story-actions{margin-top:4px}.layer-step{font-size:9px}}
+@media(min-width:701px) and (max-width:1000px) and (max-height:849px){.scroll-ready .layer-story{top:20%}.scroll-ready .layer-story h2{font-size:32px}.layer-story-detail{min-height:165px;margin-top:16px;padding-top:15px}.layer-story-detail h3{font-size:19px}.layer-story-detail p{font-size:13px}.layer-story-actions{margin-top:12px}}
+@media(prefers-reduced-motion:reduce){.hero-story,.scroll-ready .hero-story{height:auto}.scroll-ready .hero-visual{visibility:visible}.layer-piece,.part-label{transition:none}}
