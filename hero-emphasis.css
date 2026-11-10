@@ -37,3 +37,13 @@
  .hero-opening{top:12%;height:19%}.hero-copy,.scroll-ready .hero-copy{top:33%}.hero-proof{gap:9px 0;margin-bottom:16px}.hero-proof strong{font-size:23px}.hero-proof>div:nth-child(2) strong{font-size:31px}.hero-proof span:not(.finland-mark){font-size:11px}.hero-intro,.scroll-ready .hero-intro,.hero-price,.scroll-ready .hero-price{display:none}.hero-actions,.scroll-ready .hero-actions{margin-top:18px}.hero-assurance{display:none!important}
 }
 @media(prefers-reduced-motion:reduce){.hero-proof>div{animation:none!important}}
+
+/* V11: quiet text-led actions; no decorative arrows, sweep or bouncing hover. */
+.button:before{display:none}
+.button,.card-buy button,.header-cta{transition:background-color .2s ease,border-color .2s ease,box-shadow .2s ease}
+.button:hover,.card-buy button:hover{transform:none;box-shadow:0 2px 6px var(--cta-shadow)}
+.button:active,.card-buy button:active{transform:none;box-shadow:none}
+.card-buy button{justify-content:center;padding:11px 18px;min-height:44px}
+.header-cta{justify-content:center;gap:0}
+.text-button,.text-button:hover{gap:0;transition:color .2s ease,border-color .2s ease}
+.button.hero-secondary:hover{background:var(--n-paper);border-color:var(--cta-ink)}
