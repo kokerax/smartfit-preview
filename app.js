@@ -20,7 +20,7 @@ function feature(model,updateURL=false){
   featured=model;const data=models[model];
   $('hero-title').innerHTML=data.title;
   $('hero-kicker').textContent=`SMARTFIT ${data.name.toLocaleUpperCase('tr-TR')} · HAZIR TABANLIK`;
-  $('hero-intro').textContent=data.intro;$('hero-cta').textContent=data.cta;
+  $('hero-intro').textContent=data.intro;$('hero-cta').textContent='Bana Uygun SmartFit’i Bul';
   $('hero-caption').textContent=data.caption;
   $('hero-image').src=imagePath(model,'stage');$('hero-image').alt=`FootBalance SmartFit ${data.name} tabanlık çifti`;
   $('hero-visual').dataset.model=model;

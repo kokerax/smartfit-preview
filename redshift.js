@@ -42,7 +42,7 @@
     outgoing.inert = true;
     outgoing.setAttribute('aria-hidden', 'true');
     heroCopy.classList.toggle('is-inactive', !showHero);
-    if (moveFocus) incoming.querySelector('[data-buy]').focus({preventScroll: true});
+    if (moveFocus) incoming.querySelector('button, a[href]')?.focus({preventScroll: true});
   }
   function render(progress) {
     const turn = range(progress, .02, .24);
